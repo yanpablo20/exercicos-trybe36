@@ -1,2 +1,2 @@
 # exercicos-trybe36
-Exercícios Trybe 36
+Exercícios git Trybe 36
