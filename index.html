@@ -22,7 +22,7 @@
 FORMA2: CLASS - USA MAIS DE UMA VEZ - .
 */
             {
-                font-family: 'Montserrat', sans-serif;
+            font-family: 'Montserrat', sans-serif;
         }
 
         #header-container {
@@ -30,8 +30,16 @@ FORMA2: CLASS - USA MAIS DE UMA VEZ - .
             padding: 20px;
         }
 
-        #header-container li li {
+        #header-container li {
             list-style: none;
+            display: inline;
+            margin-right: 15px
+        }
+
+        #header-container li,
+        ul,
+        img {
+            display: inline;
         }
 
         #header-container a,
@@ -43,7 +51,7 @@ FORMA2: CLASS - USA MAIS DE UMA VEZ - .
         #info-container {
             background-color: rgb(29 117 222);
             color: white;
-            padding: 40px;
+            padding: 50px;
         }
 
         #info-container h1 {
@@ -57,6 +65,9 @@ FORMA2: CLASS - USA MAIS DE UMA VEZ - .
             margin-bottom: 50px;
         }
 
+        .info-buttons-container{
+            width: 380px;
+        }
         .info-button {
             background-color: black;
             width: 140px;
@@ -65,7 +76,27 @@ FORMA2: CLASS - USA MAIS DE UMA VEZ - .
             text-align: center;
             font-size: 15px;
             text-transform: uppercase;
+            display: inline;
+            /*pode cair no porjeto - block=em baixo um do outro - inline-do lado - inline block=força a ficar um do lado do outo*/
+        margin-right: 10px;
         }
+
+        #button-left {
+            float: left;
+
+        }
+
+        /* o float pode cair no projeto */
+
+        #button-right {
+            float: right;
+        }
+
+        #termos {
+            clear: both;
+        }
+
+
     </style>
 
 </head>
@@ -113,16 +144,16 @@ FORMA2: CLASS - USA MAIS DE UMA VEZ - .
         </div>
         <div>
             <div class="info-buttons-container">
-                <div class="info-button">
+                <div class="info-button" id="button-left">
                     <a href="https://www.spotify.com/br-pt/purchase/offer/default-trial-1m?country=BR">COMECE AGORA</a>
                 </div>
-                <div class="info-button">
+                <div class="info-button" id="button-right">
                     <a
                         href="https://www.spotify.com/br-pt/premium/?utm_source=br-pt_brand_contextual-desktop_text&utm_medium=paidsearch&utm_campaign=alwayson_latam_br_premiumbusiness_core_brand+contextual-desktop+text+exact+br-pt+google&gad=1&gclid=CjwKCAjw_uGmBhBREiwAeOfsdxEKcM1_gqt7V0T0wdHf3xzwefqK8xnwZoMjEWzGCy7lQEfO3A22-BoCUy4QAvD_BwE&gclsrc=aw.ds#plans">VER
                         PLANOS</a>
                 </div>
             </div>
-            <div>
+            <div id="termos">
                 <p>
                     <a href="https://www.spotify.com/legal/premium-promotional-offer-terms">Sujeito a Termos e
                         Condições.</a>
